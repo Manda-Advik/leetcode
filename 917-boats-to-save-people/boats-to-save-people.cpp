@@ -10,9 +10,14 @@ public:
         while(l<=r){
             if(people[l]+people[r]<=limit){  
                 l++;
+                count++;
+                r--;
             }
-            count++;
-            r--;
+            else{
+                count++;
+                r--;
+            }
+            
         }
         return count;
     }

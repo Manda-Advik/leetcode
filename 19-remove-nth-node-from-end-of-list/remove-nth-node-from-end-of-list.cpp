@@ -16,7 +16,7 @@ public:
         for (int i = 0; i < n; i++) {
             head = head->next;
         }
-        while (head != nullptr) {
+        while (head) {
             head = head->next;
             dummy = dummy->next;
         }
